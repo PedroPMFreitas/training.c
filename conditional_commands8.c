@@ -8,7 +8,7 @@ float x,y,z;
 z = (x+y)/2;
 if(x<=10){
     if(x>=0){
-    printf("%f",z);
+    printf("this is the average notes :%f",z);
         }else{
             printf("the note does not have a valid value");
             }
