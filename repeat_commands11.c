@@ -3,7 +3,7 @@
 int main () {
 int x,y,i;
 y=-1;
-printf("escreva a quantidade de numeros impares que vc quer:");
+printf("Write the number of odd numbers you want:");
 scanf("%d",&x);
 for(i=x;i>0;i--){
 y=y+2;
