@@ -1,0 +1,66 @@
+ /*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+char A[6];
+A[0] = 1;
+A[1] = 0;
+A[2] = 5;
+A[3] = -2;
+A[4] = -5;
+A[5] = 7;
+int s = A[0] + A[1] + A[5];
+printf("%d\n", s);
+A[4] = 100;
+printf("%d\n", A[0]);
+printf("%d\n", A[1]);
+printf("%d\n", A[2]);
+printf("%d\n", A[3]);
+printf("%d\n", A[4]);
+printf("%d\n", A[5]);
+    return 0;
+}
+*/
+ /*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+int p=0,i;
+int V[10];
+for(int i = 0; i < 10; i++){
+    printf("insira os valores %d: ", i);
+    scanf("%d", &V[i]);
+
+}
+for (i = 0; i < 10; i++)
+{
+    if(V[i]%2 == 0){
+        printf("os valores pares sao: %d\n", V[i]);
+        p++;
+    }
+}
+printf("a quantidade de pares sao: %d\n", p);
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+int V[10];
+for(int i = 0 ; i<10; i++ ){
+
+    printf("insira os valores %d: ", i);
+    scanf("%d", &V[i]);
+    if (V[i] < 0){
+        V[i] = 0;
+    }
+}
+for(int i = 0 ; i<10; i++ ){
+    printf("os valores sao: %d\n", V[i]);
+}
+    return 0;
+}
+*/
