@@ -1,0 +1,168 @@
+ /*
+#include <stdio.h>
+#include <stdlib.h>
+
+int maiorvalor(int a[],int x){
+    int maior = 0;
+    for(int i = 0; i < x; i++){
+        if(i==0){
+            maior = a[i];
+        }
+        if(a[i]>maior){
+            maior = a[i];
+        }
+    }
+
+
+return maior; 
+}
+
+int main() {
+    int x,m;
+    printf("Digite o tamanho do vetor: ");
+    scanf("%d",&x);
+    int a[x];
+    for(int j=0;j<x;j++){
+        printf("Digite o valor do vetor: ");
+        scanf("%d",&a[j]);
+    }
+    m = maiorvalor(a,x);
+    printf ("O maior valor do vetor e: %d",m);
+
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+char ma(char mi){
+    if (mi >= 'a' && mi <= 'z'){
+        mi = mi -32;
+    }
+    
+
+return mi;
+}
+
+
+int main() {
+    char x;
+    printf("Digite uma letra: ");
+    scanf("%c",&x);
+    x = ma(x);
+    printf("A letra maiuscula e: %c",x);
+
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+void p(int n){
+    int i;
+    int k=1;
+    for (i=1;i<=n;i++){ 
+        for(int j=1;j<=k;j++){
+            printf("!");
+
+        }
+    k++;
+    printf("\n");
+    }
+
+    
+
+}
+
+int main(){
+    int n;
+printf("Digite o tamanho: ");
+scanf("%d",&n);
+p(n);
+
+
+return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int i = 4;
+    float f = 2.5;
+    char c = 's';
+    int* pi;
+    float* pf;
+    char* pc;
+    pi = &i;
+    pf = &f;
+    pc = &c;
+    printf("O valor de pi e: %d\n",*pi);
+    printf("O valor de pf e: %f\n",*pf);
+    printf("O valor de pc e: %c\n",*pc);
+    printf("O valor de i e: %d\n",i);
+    printf("O valor de f e: %f\n",f);
+    printf("O valor de c e: %c\n",c); 
+    printf("O endereco de i e: %p\n",&i);
+    printf("O endereco de f e: %p\n",&f);
+    printf("O endereco de c e: %p\n",&c);
+
+    printf("O valor de pi e: %d\n",++*pi);
+    printf("O valor de pf e: %f\n",++*pf);
+    printf("O valor de pc e: %c\n",++*pc);
+    printf("O valor de i e: %d\n",i);
+    printf("O valor de f e: %f\n",f);
+    printf("O valor de c e: %c\n",c); 
+    printf("O endereco de i e: %p\n",&i);
+    printf("O endereco de f e: %p\n",&f);
+    printf("O endereco de c e: %p\n",&c);
+
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+int x,y;
+printf("Digite o valor de x: ");
+scanf("%d",&x);
+printf("Digite o valor de y: ");
+scanf("%d",&y);
+printf("O valor de x e: %d\n",x);
+printf("O valor de y e: %d\n",y);
+printf("O endereco de x e: %p\n",&x);
+printf("O endereco de y e: %p\n",&y);
+if(&x>&y){
+    printf("O maior endereco e: %p que armazena %d\n",&x,x);
+}
+else{
+    printf("O maior endereco e: %p que armazena %d\n",&x,y);
+}
+
+return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+int x[5];
+for(int i=0;i<5;i++){
+    printf("Digite o valor de x[%d]: ",i);
+    scanf("%d",&x[i]);
+}
+for(int i=0;i<5;i++){
+    printf("O dobro de x[%d] e: %d\n",*(x + i),2 * *(x + i));
+}
+
+    return 0;
+
+}
+*/
