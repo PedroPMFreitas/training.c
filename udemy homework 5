@@ -1,0 +1,87 @@
+/*
+
+#include <stdio.h>
+
+int main(){
+FILE *arq;
+char c[100];
+
+arq = fopen("arq.txt", "w");
+
+if(arq){
+fgets(c, 100, stdin);
+while(c[0] != '0'){
+    fputs(c, arq);
+    fgets(c, 100, stdin);
+
+}
+}else{
+printf("Erro na abertura do arquivo\n");
+}
+fclose(arq);
+arq = fopen("arq.txt", "r");
+if(arq){
+    fgets(c, 100, arq);
+    while(!feof(arq)){
+        printf("%s", c);
+        fgets(c, 100, arq);
+    }
+}else{
+    printf("Erro na abertura do arquivo\n");
+}
+fclose(arq);
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+  
+int main(){
+    int x=0; 
+FILE *arq;
+char nome[100], *resultado;
+printf("Digite o nome do arquivo: ");
+scanf("%s", nome);
+arq = fopen(nome, "r");
+if(arq){
+    while(!feof(arq)){
+     resultado = fgets(nome, 100, arq); 
+        if(resultado){
+            x++;
+        }
+   }
+}else{
+    printf("Erro na abertura do arquivo\n");
+}
+fclose(arq);
+printf("O arquivo tem %d linhas\n", x);
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+
+int main(){
+    FILE *arq;
+    int x=0;
+    char nome[100],c;
+    printf("Digite o nome do arquivo: ");
+    scanf("%s", nome);
+    printf("digite um caractere para ser buscado: ");
+    scanf(" %c", &c);
+    arq = fopen(nome, "r");
+    if(arq){
+
+        while(!feof(arq)){
+            if(fgetc(arq) == c){
+                x++;
+            }
+        }
+    }else{
+        printf("Erro na abertura do arquivo\n");
+    }
+    fclose(arq);
+    printf("O caractere %c aparece %d vezes no arquivo\n", c, x);
+    return 0;
+}
+*/
