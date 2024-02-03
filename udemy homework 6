@@ -1,0 +1,84 @@
+/*
+#include <stdio.h>
+#include <string.h>
+struct pessoa {
+        char nome[20],endereco[50];
+        int idade;
+        }pessoa1;
+int main(){
+   printf("Digite o nome: ");
+    fgets(pessoa1.nome, 20, stdin);
+    printf("Digite o endereco: ");
+    fgets(pessoa1.endereco, 50, stdin);
+    printf("Digite a idade: ");
+    scanf("%d", &pessoa1.idade);
+    printf("Nome: %s\n", pessoa1.nome);
+    printf("Endereco: %s\n", pessoa1.endereco);
+    printf("Idade: %d\n", pessoa1.idade);
+
+
+
+    return 0;
+
+
+
+} 
+*/
+/*
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+struct aluno {
+    char nome[100], curso[100];
+    int matricula;
+};
+
+int main (){
+    struct aluno aluno[5];
+    int i,j;
+    for ( i=0;i<5;i++){
+        printf("Digite o nome: \n");
+        fgets(aluno[i].nome, 20, stdin);
+        printf("Digite o curso: \n");
+        fgets(aluno[i].curso, 20, stdin);
+        printf("Digite a matricula: \n");
+            scanf("%d", &aluno[i].matricula);
+            getchar();
+    }
+    for( j=0;j<5;j++){
+        printf("Nome: %s\n", aluno[j].nome);
+        printf("Curso: %s\n", aluno[j].curso);
+        printf("Matricula: %d\n", aluno[j].matricula);
+    }
+
+
+    return 0;
+
+}
+*/
+/*
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+struct Vetor{
+    float x,y,z;
+
+}vetor[3];
+int main(){;
+    for(int i=0;i<2;i++){
+        printf("Digite o valor de x: ");
+        scanf("%f", &vetor[i].x);
+        printf("Digite o valor de y: ");
+        scanf("%f", &vetor[i].y);
+        printf("Digite o valor de z: ");
+        scanf("%f", &vetor[i].z);
+    }
+    vetor[2].x=vetor[0].x+vetor[1].x;
+    vetor[2].y=vetor[0].y+vetor[1].y;
+    vetor[2].z=vetor[0].z+vetor[1].z;
+    printf("a soma dos pontos dos vetores é %f %f %f", vetor[2].x, vetor[2].y, vetor[2].z);
+    return 0;
+}
+*/
