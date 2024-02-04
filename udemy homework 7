@@ -1,0 +1,62 @@
+/*
+#include <stdio.h>
+
+int soma (int n){
+int i,soma=0;
+for(i=1;i<=n;i++){
+    soma+=i;
+}
+return soma;
+};
+
+
+int main(){
+    int x;
+    printf("Digite um numero: ");
+    scanf("%d",&x);
+    printf("A soma dos numeros de 1 a %d eh %d\n",x,soma(x));
+
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int fat(int n){
+    if(n==0){
+        return 1;
+    }
+    else{
+        return n*(fat(n-1));
+    }
+    
+};
+int main (){
+    int n;
+    printf("Digite um numero: ");
+    scanf("%d",&n);
+    printf("O fatorial de %d eh %d\n",n,fat(n));
+
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int binario(int n){ 
+    if(n==0){
+        return 0;
+    }
+    else{
+        return (n%2)+10*binario(n/2);
+    }
+};
+
+
+int main(){
+    int n;
+    printf("Digite um numero: ");
+    scanf("%d",&n);
+    printf("O numero %d em binario eh %d\n",n,binario(n));
+
+    return 0;
+}
+*/
