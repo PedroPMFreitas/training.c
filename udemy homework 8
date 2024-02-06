@@ -1,0 +1,75 @@
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int *p,n=5;
+    p = (int*)malloc(n*sizeof(int));
+    for(int i =0;i<n;i++){
+        printf("Digite o valor de p[%d]: ", i);
+        scanf("%d", &p[i]);
+    }
+    for(int i =0;i<n;i++){
+        printf("p[%d] = %d\n", i, p[i]);
+    }
+    free(p);
+    p = NULL;
+    return 0;
+} 
+*/
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int *p,n=3,x=0;
+    p = (int*)malloc(n*sizeof(int));
+    printf("quantos valores quer informar");
+    scanf("%d", &x);
+    if(x>n){
+        p = (int*)realloc(p,x*sizeof(int));
+    }else{
+        x=n;
+    }   
+    for(int i =0;i<x;i++){
+        printf("Digite o valor de p[%d]: ", i);
+        scanf("%d", &p[i]);
+    }
+    for(int i =0;i<x;i++){
+        printf("p[%d] = %d\n", i, p[i]);
+    }
+
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+
+int main(){ 
+    char *p;
+    int n;
+    char v[]={'a', 'e', 'i', 'o', 'u'};
+    printf("Digite o tamanho da string: ");
+    scanf("%d", &n);
+    getchar();
+    p = (char*)malloc((n+1)*sizeof(char));
+    printf("Digite a string: ");
+    fgets(p, n, stdin);
+    getchar();
+
+    
+    for(int i=0;i<n;i++){
+        if(p[i] == v[0] || p[i] == v[1] || p[i] == v[2] || p[i] == v[3] || p[i] == v[4]){
+            i++;
+        }
+        printf("%c", p[i]);
+    }
+
+    return 0;
+}
+*/
