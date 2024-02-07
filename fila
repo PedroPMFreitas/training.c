@@ -1,0 +1,89 @@
+#include <stdio.h>
+#define TAMFILA 10
+
+//fila /queue
+
+    int fila[TAMFILA]={0,0,0,0,0,0,0,0,0,0};
+    int head = 0;
+    int tail = 0;
+
+
+void lista_elementos(){
+        printf("\n========FILA ATUAL========\n");
+        for(int i=0;i<TAMFILA;i++){
+            printf("-");
+            printf("|%d| ",fila[i]);
+            printf("-") ;
+        }
+        printf("\nHead: %d\n",head);
+        printf("Tail: %d\n",tail);
+          
+
+    }
+
+    void insere_elemento(){
+        int val;
+        if(tail < TAMFILA){
+            printf("informe o elemento para adicionar na fila:");
+            scanf("%d",&val);
+            fila[tail]=val;
+            tail++;
+            lista_elementos();
+
+        }else 
+        {
+            printf("Fila cheia");
+        }
+    }
+
+    void remove_elemento(){
+        if(head < TAMFILA){
+            fila[head]=0;
+            head++;
+            lista_elementos();
+
+
+
+        }else 
+        {    
+            printf("Fila vazia");
+        }
+    }
+
+    void limpa_fila(){
+        for(int i=0;i<TAMFILA;i++){
+            fila[i]=0;
+        }
+        head=0;
+        tail=0;
+        lista_elementos();
+    }
+
+
+int main(){
+    int opcao=0;
+    do{
+    printf("1- Inserir elemento\n");
+    printf("2- Remover elemento\n");
+    printf("3- Limpar fila\n");
+    printf("4- Sair\n");
+    printf("Escolha uma opcao:");
+    scanf("%d",&opcao);
+
+    switch (opcao)
+    {
+    case 1:
+        insere_elemento();
+        break;
+    case 2:
+        remove_elemento();
+        break;
+    case 3:
+        limpa_fila();
+        break; 
+    default:
+        break;
+    }
+    }while(opcao!=4);
+    return 0;
+}
