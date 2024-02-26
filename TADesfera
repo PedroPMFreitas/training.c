@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include "Ponto.h"
+void iniciaEsfera(struct Esfera *e,double r){
+       e -> raio = r;
+};
+double raio(struct Esfera *e){
+        return e -> raio;
+};
+double area(struct Esfera *e){
+    return (4*3.14*e->raio*e->raio);
+};
+double volume(struct Esfera *e){
+    return((4*3.14*e->raio*e->raio*e->raio)/3);
+};
+int main(){
+    struct Esfera esfera1;
+    double r;
+    printf("escreva o tamanho do raio:");
+    scanf("%lf",&r);
+    iniciaEsfera(&esfera1,r);
+    printf("o raio e :%lf",raio(&esfera1));
+    printf("a area e :%lf",area(&esfera1));
+    printf("o volume e :%lf",volume(&esfera1));
+
+    return 0;
+}
+#include <stdio.h>
+#include<stdlib.h>
+
+struct Esfera{
+    double raio;
+};
+
+void iniciaEsfera(struct Esfera *e,double r);
+
+double raio(struct Esfera *e);
+double area(struct Esfera *e);
+double volume(struct Esfera *e);
+
+
+
