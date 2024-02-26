@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include "Ponto.h"
+void iniciaCubo(struct Cubo *c,double l){
+    c->l = l ;
+}
+
+double lado(struct Cubo *c){
+    return c -> l ;
+}
+
+double area(struct Cubo *c){
+    return (c->l*c->l*6);
+}
+
+double volume(struct Cubo *c){
+    return(c->l*c->l*c->l);
+}
+
+int main(){
+    struct Cubo cubo1;
+    double l;
+    printf("escreva o lado:");
+    scanf("%lf",&l);
+    iniciaCubo(&cubo1, l);
+
+    printf("lado do cubo : %lf\n",lado(&cubo1));
+    printf("area do cubo e:%lf\n",area(&cubo1));
+    printf("volume do cubo e:%lf\n",volume(&cubo1));
+
+
+
+    return 0;
+}
+#include <stdio.h>
+#include<stdlib.h>
+
+struct Cubo{
+    int l;
+};
+
+void iniciaCubo(struct Cubo *c,double l);
+
+double lado(struct Cubo *c);
+double area(struct Cubo *c);
+double volume(struct Cubo *c);
+
+
+
