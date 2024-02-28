@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Conj{
+    int n;
+    int *v;
+};
+
+void criaConj(struct Conj *c,int n);
+struct Conj uniConj(struct Conj *a,struct Conj *b);
+void insereElemento(struct Conj *c,int x);
+void removeElemento(struct Conj *c,int x);
+struct Conj interConj(struct Conj *a,struct Conj *b);
+struct Conj difConj(struct Conj *a,struct Conj *b);
+int pertenceConj(struct Conj *c,int x);
+int menorValor(struct Conj *c);
+int conjIguais(struct Conj *a,struct Conj *b);
+int tamanhoConj(struct Conj *c);
+void conjVazio(struct Conj *c);
+void escreveConj(struct Conj *C);
+
+
+
+
