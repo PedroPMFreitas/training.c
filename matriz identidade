@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int matriz_identidade(int* matriz,int n){
+    for(int i= 0;i<n;i++){
+        for(int j=0;j<n;j++){
+            int indice=i *n+j;
+            if((i==j&&matriz[indice]!=1)||(i!=j&&matriz[indice]!=0)){
+                return 0;
+            }
+        }
+
+    }
+    return 1;
+}
+
+int main(){
+    int x[]={1,0,0,0,1,0,0,0,1};
+    int n=3;
+    int y=(matriz_identidade(x,n));
+    printf("%d",y);
+
+    return 0;
+}
