@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float y;
+    int notas[6]={100,50,20,10,5,2},s,moedas[6]={100,50,25,10,5,1};
+    scanf("%f",&y);
+    printf("NOTAS:\n");
+    for(int n=0;n<6;n++){
+        s=(y/(notas[n]));
+        y=y-s*notas[n];
+        printf("%d nota(s) de R$ %d.00\n",s,notas[n]);
+    }
+  int x=(int)(y*100+0.5);
+  printf("MOEDAS:\n");
+    for(int n=0;n<6;n++){
+        s=(int)(x/(moedas[n]));
+        x=x-s*moedas[n];
+        printf("%d moeda(s) de R$ %.2f\n",s,(moedas[n])/100.0);
+    }
+
+    return 0;
+}
